@@ -5,6 +5,7 @@ GENERAL STYLES
 ************/
 * {
 	box-sizing: border-box;
+	
 }
 
 
@@ -33,28 +34,38 @@ img {
 	clear: right;
 }
 
+.main {
+	width: 960px;
+	height: 700px;
+	border-color: black;
+	border-width: 5px;
+}
+
 .content-area {
+	background-color: #ffffff;
 	width: 610px;
 	margin: 10px;
 	padding: 10px;
-	background-color: #ffffff;
 	text-overflow: wrap;
-	position: relative;
-	top: 150px;
-	left: 50px;
+	position: absolute;
+	top: 100px;
+	left: 75px;
 	
-
+	/******* float: left;*******/
 }
 
 .connect-with-me {
+	background-color: #ffffff;
 	width: 270px;
 	height: 200px;
-	margin: 20px;
+	margin: 10px;
 	padding:15px;
-	background-color: #ffffff;
-	position: relative;
-	bottom: 350px;
+	text-overflow: wrap;
+	position: absolute;
+	top: 100px;
 	left: 700px;
+		
+	/****** float: right;***/
 	
 }
 
@@ -65,21 +76,27 @@ HEADING
 header {
   float: left;
   width: 100%;
+  height: 60px;
+  position: relative;
+  top: 0;
+  left: 50px;
 
 }
 
 
 h2 {
 	color: #4aaaa5;
-	border-bottom-color: gray;
-  	border-bottom-width: 10px;
-  	font-size: 1.25em;
+	font-size: 1.25em;
+  	font-weight: 600;
+  	padding: 0;
+  	margin: 0;
   	
 }
 
 h3 {
 	color: #4aaaa5;
 	font-size: 1.25em;
+	font-weight: 600;
 }
 
 /************
@@ -91,29 +108,35 @@ h1 {
 	font-size: 1.25em;
 	background-color: #4aaaa5;
 	width: 150px;
-	height: 75px;
+	height: 60px;
 	position: relative;
-
+	left: 50px;
 	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	font-weight: 650;
 }
 
 nav {
   text-align: center;
+  vertical-align: middle;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  list-style: none;
   float: right;
-
 }
 
+/*****
 nav ul {
   list-style: none;
   margin: 0 10px;
   padding: 0;
 }
+*****/
 
 nav li {
   display: inline-block;
-  float: right;
+  float: left;
 }
 
 nav a {
@@ -141,9 +164,10 @@ footer {
 	text-align: center;
 	background-color: #666666;
 	width: 100%;
-	height: 89px;
-	border-top-height: 15px;
-	border-top-color: #4aaaa5;
+	height: 75px;
+	border-top: 3px solid #4aaaa5;
+	font-size: 15px;
+	
 }
 
 .social-icon {
@@ -154,7 +178,7 @@ footer {
 
 /*Sticky Footer. Note: vh = veiw height and calc does the calculation of the vh minus the footer [fixed] height*/
 .wrap {
-	min-height: calc(100vh - 89px);
+	min-height: calc(100vh - 75px);
 }
 
 /************
@@ -165,3 +189,8 @@ ABOUT ME PAGE
 	width: 960px;
 }
 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}

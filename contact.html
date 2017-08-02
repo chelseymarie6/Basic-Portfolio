@@ -8,36 +8,36 @@
 </head>
 
 <body>
-   <header> 
-   		<a href="index.html"> 
-		<h1><strong>Chelsey Dolan</strong></h1>
-		</a>
-<!--Navigation Section - links to other HTML pages -->
-		<nav>
-			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html" class="selected">Contact</a></li>
-			</ul>
-		</nav>
-   </header>
+	<div class="wrap">
+	   <header> 
+	   		<a href="index.html"> 
+			<h1><strong>Chelsey Dolan</strong></h1>
+			</a>
+	<!--Navigation Section - links to other HTML pages -->
+			<nav>
+				<ul>
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html" class="selected">Contact Me</a></li>
+				</ul>
+			</nav>
+	   </header>
 
  <!--Contact page where user can enter name, email and a message -->
+	<section class="main">
 		
 		<div class="content-area">
-		
-		<h3><strong>Contact</strong></h3>
+		<h3><strong>Contact Me</strong></h3>
 		<form>
 			Name:<br>
 			<input type="name" name="Fullname" value="John Smith"><br>
 			Email:<br>
 			<input type="email" name="email" value="example@gmail.com"><br>
 			Message:<br>
-			<textarea name="message" rows="10" cols="30">
+			<textarea name="message" rows="50" cols="30">
 			</textarea><br>
-			<input type="submit" value="Submit"
+			<input type="submit" value="Submit">
 		</form>
-
 		</div>
 
 <!--Connect with Me section - includes photos and links to social media -->
@@ -50,7 +50,9 @@
 			<a href="https://stackoverflow.com/users/7949317/chelsey-dolan" target="_blank"><img src="assets/images/stackoverflow.png" alt="StackOverflow" class="social-icon"></a>
 			
 		</div>
-		
+	</section>	
+
+	</div>
 		
    <footer>
    		<p>&copy; 2017 Chelsey Dolan.</p>
