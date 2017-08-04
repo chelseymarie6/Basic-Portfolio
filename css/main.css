@@ -27,10 +27,6 @@ img {
   max-width: 100%;
 }
 
-h3 {
-  margin: 0 0 1em 0;
-}
-
 /************
 HEADING
 ************/
@@ -40,29 +36,34 @@ header {
   float: left;
   font-family: 'Georgia', Times, Times New Roman, serif;
   margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
+  padding: 15px;
   width: 100%;
-  
+  clear: both;
 }
+
+.heading {
+  width: 960px;
+  margin: 0 auto;
+ }
 
 #logo {
   background: #4aaaa5;
   text-align: center;
-  margin-left: 50px;
-
+  float: left;
+  padding: 15px;
+  margin: 0;
 }
 
 h1 {
    color: #ffffff;
    margin: 15px 0;
-   font-size: 1.75em;
+   font-size: 24px;
    font-weight: bold;
-   line-height: 0.8em;
 }
 
 h2 {
-   font-size: 18px;
-   margin: -5px 0 0;
+   color: #4aaaa5;
+   font-size: 24px;
    font-weight: bold;
 }
 
@@ -71,7 +72,6 @@ h3 {
     font-size: 18px;
     font-weight: bold;
 }
-
 
 /************
 NAVIGATION
@@ -82,7 +82,7 @@ nav {
   text-align: center;
   padding: 10px 0;
   margin: 20px 0 0;
-
+  float: right;
 }
 
 nav ul {
@@ -98,6 +98,7 @@ nav li {
 nav a {
   font-weight: 800;
   padding: 15px 10px;
+  margin-bottom: 20px;
 }
 
 /******************************
@@ -108,7 +109,8 @@ TWO COLUMN LAYOUT
     background-color: #ffffff;
     padding: 15px;
     margin-bottom: 30px;
-    
+    width: 60%;
+    float: left; 
   }
   
   #secondary {
@@ -116,6 +118,8 @@ TWO COLUMN LAYOUT
     padding: 15px;
     margin-bottom: 30px;
     text-align: center;
+    width: 30%;
+    float: right;
   }
 
 /************
@@ -135,7 +139,6 @@ footer {
   margin-top: 20px;
 }
 
-
 /************
 PAGE: PORTFOLIO
 ************/
@@ -152,24 +155,21 @@ PAGE: PORTFOLIO
   margin: 2.5%;
   background-color: #ffffff;
   position: relative;
-  
 }
 
 #gallery li a p {
   margin: 0;
   padding: 5%;
-  font-size: 0.75em;
   background-color: #4aaaa5;
   color: #ffffff;
-  height: 15%; /*was 50%*/
+  height: 15%;
   text-align: center;
 }
 
 #gallery p {
   position: absolute;
-  top: 100px;
+  top: 120px;
   width: 90%;
-
 }
 
 /************
@@ -185,11 +185,40 @@ PAGE: ABOUT
   float: left;
 }
 
+p {
+  margin: auto;
+  padding: 25px;
+}
 
+/**************
+PAGE: CONTACT
+***************/
+#submit {
+  background: #4aaaa5;
+  color: #ffffff;
+  height: 40px;
+  width: 75px;
 
-/************
-CONTACT
-************/
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/***************
+CONNECT WITH ME
+****************/
+
 .contact-info {
   padding: 15px;
 }
@@ -200,40 +229,16 @@ CONTACT
   margin: 0;
   display: inline-block;
   width: 25%;
-
-}
-
-
-
-/************
-PAGE: CONNECT
-************/
-#submit {
-  background: #4aaaa5;
-  color: #ffffff;
-  height: 40px;
-  width: 75px;
-}
 }
 
 /************
 COLORS
 ************/
 
-/* site body */
-body {
-  
-}
-
 /* white header */
 header{
   background: ##ffffff;
   border-color: #ffffff;
-}
-
-/* nav background on mobile */
-nav{
-  background: #ffffff;
 }
 
 /* links */
@@ -259,3 +264,4 @@ h1 {
 h2 {
   color: #4aaaa5;
 }
+

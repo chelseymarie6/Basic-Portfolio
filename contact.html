@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Chelsey Dolan|Web Developer</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <meta name:"viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
+    <div class="heading">
       <a href="index.html" id="logo">
         <h1>Chelsey Dolan</h1>
       </a>
@@ -20,32 +21,49 @@
           <li><a href="contact.html" class="selected">Contact</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <div id="wrapper">
       <section id="primary">
         <h2>Contact Me</h2>
         <hr>
-        <form>
+        <div class="container">
+          <form action="/action_page.php">
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Fullname" placeholder="John Smith">
+          
+          <label><b>Email</b></label>
+          <input type="text" placeholder="example@gmail.com" name="email" required>
+
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <!-- <form>
           Name:<br>
-          <input type="name" name="Fullname" value="John Smith" width="100%"><br>
+          <input type="name" name="Fullname" value="John Smith" width="100%">
+          <br>
           Email:<br>
-          <input type="email" name="email" value="example@gmail.com" rows="10" cols="30"><br>
+          <input type="email" name="email" value="example@gmail.com" rows="10" cols="30">
+          <br>
           Message:<br>
           <textarea name="message" rows="15" cols="30">
-          </textarea><br>
+          </textarea>
+          <br> -->
           <input id="submit" type="submit" value="Submit">
         </form>
+        </div>
       </section>
       
       <section id="secondary">
         <h3>Connect with Me</h3>
         <hr>
         <ul class="contact-info">
-          <li class="git"><a href="https://github.com/chelseymarie6"></a><img src="img/github.png" alt=""></li>
+          <li class="git"><a href="https://github.com/chelseymarie6" target="_blank"><img src="img/github.png" alt=""></a></li>
           
-          <li class="in"><a href="https://www.linkedin.com/in/chelseydolan/"></a><img src="img/linkedin.png" alt=""></li>
+          <li class="in"><a href="https://www.linkedin.com/in/chelseydolan/" target="_blank"><img src="img/linkedin.png" alt=""></a></li>
           
-          <li class="stack"><a href="https://stackoverflow.com/users/7949317/chelsey-dolan"></a><img src="img/stackoverflow.png" alt=""></li>
+          <li class="stack"><a href="https://stackoverflow.com/users/7949317/chelsey-dolan" target="_blank"><img src="img/stackoverflow.png" alt=""></a></li>
         </ul>
       </section>
      </div> 
