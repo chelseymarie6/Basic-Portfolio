@@ -1,65 +1,50 @@
-<!--BASIC PORTFOLIO HTML PAGE -->
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Chelsey Dolan|Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chelsey Dolan|Web Developer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name:"viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Chelsey Dolan</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="selected">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section id="primary">
+        <h2>About Me</h2>
+        <hr>
+        <img src="img/chelseydolan.jpg" alt="Photograph of Chelsey Dolan" class="profile-photo">
+        
+          <p>Hello there! My name is Chelsey Dolan, and I am a student web developer at UCSD Extension. The program is rigorous and fast-paced, covering both the theory and real-world application of full stack web development. Throughout the program I will be building and deploying all types of projects including: front-end websites using HTML/CSS/JavaScript, a browser-based role playing game, a front-end application to solve a real-world problem, a full stack web application with a robust front-end/back-end and scalable database, and several other projects using the latest web technologies.</p>
+      </section>
 
-<body>
-	<div class="wrap">
-	   <header>
-	   		<a href="index.html"> 
-			<h1><strong>Chelsey Dolan</strong></h1>
-			</a>
-	<!--Navigation Section - links to other HTML pages -->
-			<nav>
-				<ul>
-					<li><a href="index.html" class="selected">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-	   </header>
-
-	 <!--About Me section - includes photo and informational paragraghs -->
-	<section class="main">	
-		<div class="content-area">
-				
-					<h2><strong>About Me</strong></h2>
-						<hr>
-						<br>
-						<p>
-						<img src="assets/images/MeinSD.jpg" alt="Me in San Diego"/>
-						Hello there! My name is Chelsey Dolan, and I am a student web developer at UCSD Extension. The program is rigorous and fast-paced, covering both the theory and real-world application of full stack web development. Throughout the program I will be building and deploying all types of projects including (but not limited to): front-end websites using HTML/CSS/JavaScript, a browser-based role playing game, a front-end application to solve a real-world problem, a full stack web application with a robust front-end/back-end and scalable database, and several other projects using the latest web technologies.</p>
-						<br>
-						<p>I currently work as a grant writer/researcher with a small company. I am responsible for the development and writing for various state and federal grant funding opportunities, and client relationships with cities in Orange County, Los Angeles County, and throughout Southern California.</p>
-						<br>
-						<p>When I am not busy studying to become a web developer, I enjoy exploring all my current home of San Diego has the offer including the wonderful beaches, the great hikes and of course, all the trendy restaurants in the area.</p>
-				
-			</div>
-
-	<!--Connect with Me section - includes photos and links to social media -->
-			<div class="connect-with-me">
-				
-				<h3><strong>Connect with Me</strong></h3>
-				
-				<a href ="https://github.com/chelseymarie6" target="_blank"><img src="assets/images/octocat.jpg" alt="GitHub" class="social-icon"></a>
-				<a href="https://www.linkedin.com/in/chelseydolan/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" class="social-icon"></a>
-				<a href="https://stackoverflow.com/users/7949317/chelsey-dolan" target="_blank"><img src="assets/images/stackoverflow.png" alt="StackOverflow" class="social-icon"></a>
-				
-			</div>
-	</section>
-	
-	</div>	
-	
-		
-   <footer>
-   		<p>&copy; 2017 Chelsey Dolan.</p>
-   </footer>
-
-   </body>
-   </html>
+      <section id="secondary">
+        <h3>Connect with Me</h3>
+        <hr>
+        <ul class="contact-info">
+          <li class="git"><a href="https://github.com/chelseymarie6"></a><img src="img/github.png" alt=""></li>
+          
+          <li class="in"><a href="https://www.linkedin.com/in/chelseydolan/"></a><img src="img/linkedin.png" alt=""></li>
+          
+          <li class="stack"><a href="https://stackoverflow.com/users/7949317/chelsey-dolan"></a><img src="img/stackoverflow.png" alt=""></li>
+        </ul>
+      </section>
+</div>
+      <footer>
+        <span>&copy; 2017 Chelsey Dolan.</span>
+      </footer>
+    
+  </body>
+</html>

@@ -1,62 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Chelsey Dolan|Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chelsey Dolan|Web Developer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name:"viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo">
+        <h1>Chelsey Dolan</h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="selected">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <section id="primary">
+        <h2>Contact Me</h2>
+        <hr>
+        <form>
+          Name:<br>
+          <input type="name" name="Fullname" value="John Smith" width="100%"><br>
+          Email:<br>
+          <input type="email" name="email" value="example@gmail.com" rows="10" cols="30"><br>
+          Message:<br>
+          <textarea name="message" rows="15" cols="30">
+          </textarea><br>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </section>
+      
+      <section id="secondary">
+        <h3>Connect with Me</h3>
+        <hr>
+        <ul class="contact-info">
+          <li class="git"><a href="https://github.com/chelseymarie6"></a><img src="img/github.png" alt=""></li>
+          
+          <li class="in"><a href="https://www.linkedin.com/in/chelseydolan/"></a><img src="img/linkedin.png" alt=""></li>
+          
+          <li class="stack"><a href="https://stackoverflow.com/users/7949317/chelsey-dolan"></a><img src="img/stackoverflow.png" alt=""></li>
+        </ul>
+      </section>
+     </div> 
+      <footer>
+        <span>&copy; 2017 Chelsey Dolan.</span>
+      </footer>
+    
 
-<body>
-	<div class="wrap">
-	   <header> 
-	   		<a href="index.html"> 
-			<h1><strong>Chelsey Dolan</strong></h1>
-			</a>
-	<!--Navigation Section - links to other HTML pages -->
-			<nav>
-				<ul>
-					<li><a href="index.html">About</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html" class="selected">Contact Me</a></li>
-				</ul>
-			</nav>
-	   </header>
-
- <!--Contact page where user can enter name, email and a message -->
-	<section class="main">
-		
-		<div class="content-area">
-		<h3><strong>Contact Me</strong></h3>
-		<form>
-			Name:<br>
-			<input type="name" name="Fullname" value="John Smith"><br>
-			Email:<br>
-			<input type="email" name="email" value="example@gmail.com"><br>
-			Message:<br>
-			<textarea name="message" rows="50" cols="30">
-			</textarea><br>
-			<input type="submit" value="Submit">
-		</form>
-		</div>
-
-<!--Connect with Me section - includes photos and links to social media -->
-		<div id="connect-with-me">
-			
-			<h3><strong>Connect with Me</strong></h3>
-			
-			<a href ="https://github.com/chelseymarie6" target="_blank"><img src="assets/images/octocat.jpg" alt="GitHub" class="social-icon"></a>
-			<a href="https://www.linkedin.com/in/chelseydolan/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" class="social-icon"></a>
-			<a href="https://stackoverflow.com/users/7949317/chelsey-dolan" target="_blank"><img src="assets/images/stackoverflow.png" alt="StackOverflow" class="social-icon"></a>
-			
-		</div>
-	</section>	
-
-	</div>
-		
-   <footer>
-   		<p>&copy; 2017 Chelsey Dolan.</p>
-   </footer>
-
-   </body>
-   </html>
+  </body>
+</html>
