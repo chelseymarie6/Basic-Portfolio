@@ -23,5 +23,10 @@ TWO COLUMN LAYOUT
     float: left;
     margin: 15px;    
   }
+
+
+  #wrapper {
+    display: block;
+  }
 }
 
